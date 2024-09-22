@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo{
+  margin-top: 4rem;
+  text-align: center;
+  width: 450px;
+  
+
+}
+
+button{
+  margin-left: 2px;
+  border-radius: 2px;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+}
+
+.addButton, .upButton, .downButton{
+  background-color: blue;
+  transition: background 0.2s ease-in-out;
+}
+.addButton:hover, .upButton:hover, .downButton:hover{
+  background-color: hsl(180, 100%, 70%);
+}
+
+.deleteButton{
+  background-color: hsl(0, 100%, 50%);
+  transition: all 0.2s ease-in-out;
+}
+.deleteButton:hover{
+  background-color: hsl(0, 100%, 60%);
+}
+
+.completed {
+  text-decoration: line-through;
+}
